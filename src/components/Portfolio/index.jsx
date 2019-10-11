@@ -4,7 +4,7 @@ import data from "../../data/portfolio.json";
 
 export default function Portfolio() {
 	return (
-		<div className="portfolio">
+		<div className="jumbotron" id="portfolio">
 			<div className="skills-maintitle">
 				<h2 className="mb-5">Work Projects</h2>
 			</div>

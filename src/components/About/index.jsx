@@ -3,7 +3,7 @@ import "./index.scss";
 
 export default function About() {
 	return (
-		<div>
+		<div id="about">
 			<div className="jumbotron">
 				<h1 className="display-4">About Me</h1>
 				<article className="row">
