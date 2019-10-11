@@ -3,7 +3,7 @@ import "./index.scss";
 
 export default function Hero() {
 	return (
-		<div>
+		<div id="home">
 			<header className="masthead bg-primary text-white text-center">
 				<div className="container d-flex align-items-center flex-column">
 					<img

@@ -9,7 +9,7 @@ export default function Navbar() {
 				id="mainNav"
 			>
 				<div className="container">
-					<a className="navbar-brand" href="#page-top">
+					<a className="navbar-brand" href="#home">
 						Andre Torrealba
 					</a>
 					<button
@@ -27,6 +27,11 @@ export default function Navbar() {
 					<div className="collapse navbar-collapse" id="navbarResponsive">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item mx-0 mx-lg-1">
+								<a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
+									About
+								</a>
+							</li>
+							<li className="nav-item mx-0 mx-lg-1">
 								<a
 									className="nav-link py-3 px-0 px-lg-3 rounded"
 									href="#portfolio"
@@ -34,11 +39,7 @@ export default function Navbar() {
 									Portfolio
 								</a>
 							</li>
-							<li className="nav-item mx-0 mx-lg-1">
-								<a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
-									About
-								</a>
-							</li>
+
 							<li className="nav-item mx-0 mx-lg-1">
 								<a
 									className="nav-link py-3 px-0 px-lg-3 rounded"
