@@ -58,7 +58,7 @@ class Contact extends Component {
 		this.setState({ errors, [name]: value });
 	};
 
-	handleSubmit = event => {
+	handleSubmit = async event => {
 		event.preventDefault();
 
 		if (this.validateForm(this.state.errors)) {
@@ -66,7 +66,7 @@ class Contact extends Component {
 				method: "POST",
 				headers: { "Content-Type": "application/x-www-form-urlencoded" },
 				body: encode({ "form-name": "contact-me", ...this.state })
-			}).then(res => res.json());
+			}).then(res => console.log(res.json()));
 
 			console.info("Valid Form");
 		} else {
