@@ -1,10 +1,7 @@
-.jumbotron {
-    color: whitesmoke !important;
-    background-color: rgb(214, 177, 83);
-
-    .half {
-        width: 50%;
-        display: inline-block;
+@media only screen and (min-width: 800px) {
+    .jumbotron {
+        color: whitesmoke !important;
+        background-color: #6D4343;
 
         .vzla {
             text-align: center;
@@ -16,7 +13,11 @@
             width: 100%
         }
 
-        .abt-img {}
+        .abt-img {
+            width: 75%;
+            display: inherit;
+            align-self: center;
+        }
     }
 
 
@@ -31,4 +32,8 @@
     100% {
         transform: translateX(0);
     }
+}
+
+.jumbotron {
+    margin-bottom: 0 !important;
 }

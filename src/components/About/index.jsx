@@ -6,37 +6,36 @@ export default function About() {
 		<div>
 			<div className="jumbotron">
 				<h1 className="display-4">About Me</h1>
-				<div className="half">
-					<img
+				<article className="row">
+					<div className="col-sm-12 col-md-6">
+						{/* <img
 						className="abt-img"
-						src="https://static1.squarespace.com/static/59bff878e9bfdf14c20dc183/t/5a5936b153450a1dce284eea/1568132017911/?format=1500w"
-					/>
-					<span role="img" aria-label="Venezuela Flag" className="vzla">
-						🇻🇪
-					</span>
-				</div>
-				<div className="half">
-					<p className="lead">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sit
-						amet metus mi. Nulla vel urna condimentum mi faucibus porttitor.
-						Fusce eleifend purus in sem bibendum, eget vehicula dolor rhoncus.
-						Sed quam metus, rutrum non maximus vitae, aliquam ac ante. Sed
-						euismod lectus quis scelerisque sagittis. Pellentesque sed lorem
-						gravida, dapibus urna in, euismod dolor. Nunc rhoncus placerat
-						scelerisque. Nullam quis mollis quam, dictum pretium mi. Vestibulum
-						at ante sit amet nisl vestibulum viverra quis tincidunt quam. Mauris
-						iaculis feugiat nulla, a luctus sapien feugiat sit amet. Mauris sed
-						feugiat odio. Mauris sed dignissim mi. Aliquam eget consectetur
-						libero. Vestibulum vehicula justo ante, ut vehicula lorem
-						condimentum nec. Curabitur id luctus nulla. Mauris ullamcorper, elit
-						a bibendum ullamcorper, nunc urna vehicula dolor, quis lacinia lacus
-						felis sit amet mauris. Aenean quis lorem condimentum, commodo ligula
-						eu, bibendum massa. Vivamus vitae dui in velit suscipit convallis.
-						Phasellus viverra eleifend mollis. Aliquam consequat augue pretium
-						dictum scelerisque. Mauris ut molestie ipsum, a egestas dolor.
-					</p>
-					<p className="lead"></p>
-				</div>
+						src="https://images.unsplash.com/photo-1517353334933-3365be5c8ec3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
+						alt="soundboard"
+					/> */}
+						<span role="img" aria-label="Venezuela Flag" className="vzla">
+							🇻🇪
+						</span>
+					</div>
+					<div className="col-sm-12 col-md-6">
+						<p className="lead">
+							Ambitious and passionate developer looking to develop his skills
+							gathered in the Road to Hire program. My passion for tech began
+							very early with the influence of my father, but I did not pursue
+							this passion more deeply until the Road to Hire program where I
+							developed myself profesionally and technically. The technologies I
+							learned are going to be listed below this section.
+						</p>
+						<p className="lead">
+							Another thing I am really passionate about too is music. I've
+							always loved music, coming from a very musical family I always
+							heard how difficult it was to set up music events, and that's what
+							gave me the idea for my eCommerce website which is the project I'm
+							most proud about.
+						</p>
+						<p className="lead"></p>
+					</div>
+				</article>
 			</div>
 		</div>
 	);

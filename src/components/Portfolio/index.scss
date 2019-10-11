@@ -1,0 +1,44 @@
+.portfolio {
+    background-color: #e9ecef;
+}
+
+.main-container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 1rem;
+
+    .container {
+        display: block;
+        margin: 1rem;
+
+        .project-img {
+            max-width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .container {
+        width: 50%;
+        width: calc(50% - 2rem);
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        width: calc(33.3333% - 2rem);
+
+    }
+}
+
+#link {
+    text-decoration: none;
+    color: black;
+    font-family: Roboto;
+}

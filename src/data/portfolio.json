@@ -1,0 +1,31 @@
+[{
+        "name": "Guessing Game",
+        "link": "https://guessingame.netlify.com",
+        "img": "img/guess.png"
+    },
+    {
+        "name": "Dice Game",
+        "link": "https://dicegm.netlify.com/",
+        "img": "img/dice.png"
+    },
+    {
+        "name": "React eCommerce Project",
+        "link": "https://andesecommerce.herokuapp.com",
+        "img": "img/andes.png"
+    },
+    {
+        "name": "Express Server",
+        "link": "https://github.com/andretg12/firstServer",
+        "img": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+    },
+    {
+        "name": "Budget App",
+        "link": "https://andre-budget.netlify.com",
+        "img": "https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5da0c622ecafacb6791dd470/screenshot.png"
+    },
+    {
+        "name": "First Website Intended as a Tourism website for Venezuela",
+        "link": "https://venezuela.netlify.com",
+        "img": "https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5d9fa165d26ca54095fac6b2/screenshot.png"
+    }
+]

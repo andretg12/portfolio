@@ -13,7 +13,7 @@ export default function Hero() {
 					/>
 
 					<h1 className="masthead-heading text-uppercase mb-0">
-						Andre Torrealba
+						Andre F. Torrealba
 					</h1>
 
 					<p className="masthead-subheading font-weight-light mb-0">
