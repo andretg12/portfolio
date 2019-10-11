@@ -130,9 +130,7 @@ class Contact extends Component {
 								<small>Message must be eight characters in length.</small>
 							</div>
 							<div className="submit">
-								<button href={`http://localhost:4000/api/contacts`}>
-									Submit
-								</button>
+								<button type="submit">Submit</button>
 							</div>
 						</form>
 					</div>
