@@ -1,6 +1,6 @@
 import React from "react";
 import "./index.scss";
-import data from "/Users/andretorrealbagarcia/Documents/git repos/portfolio/src/data/portfolio.json";
+import data from "../../data/portfolio.json";
 
 export default function Portfolio() {
 	return (
