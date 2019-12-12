@@ -8,7 +8,7 @@ export default function Hero() {
 				<div className="container d-flex align-items-center flex-column">
 					<img
 						className="rounded-circle mb-5"
-						src="https://media.licdn.com/dms/image/C4D03AQFLSBnuMM_v-w/profile-displayphoto-shrink_200_200/0?e=1576108800&v=beta&t=58qdKXmQoTe0rmJRy85sUcZXAanSIwMXoU-afx6vd7k"
+						src="https://media.licdn.com/dms/image/C4D03AQFLSBnuMM_v-w/profile-displayphoto-shrink_200_200/0?e=1581552000&v=beta&t=9kVIX5e1dpWsCKLiD4QH1LrH0YPD5r1HrC_Drq9vu5o"
 						alt=""
 					/>
 
