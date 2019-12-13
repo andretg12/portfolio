@@ -33,7 +33,6 @@ export default function About() {
 							gave me the idea for my eCommerce website which is the project I'm
 							most proud about.
 						</p>
-						<p className="lead"></p>
 					</div>
 				</article>
 			</div>

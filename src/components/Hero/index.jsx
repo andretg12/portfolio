@@ -17,7 +17,7 @@ export default function Hero() {
 					</h1>
 
 					<p className="masthead-subheading font-weight-light mb-0">
-						Road to Hire Student - Aspiring Software Engineer
+						Road to Hire - Software Developer
 					</p>
 				</div>
 			</header>
