@@ -1,24 +1,90 @@
-.fa-github {
-    color: black;
+.contact {
+  padding-bottom: 2rem;
 }
 
-.fa-linkedin {
-    color: #017bb8;
+.contact__panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(1.5rem, 5vw, 4rem);
+  align-items: center;
+  padding: clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 2rem;
+  background:
+    radial-gradient(circle at top left, rgba(14, 165, 233, 0.18), transparent 32%),
+    rgba(15, 23, 42, 0.8);
+  box-shadow: var(--shadow-lg);
+
+  h2 {
+    max-width: 13ch;
+    margin: 0;
+    color: var(--color-text-strong);
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: -0.06em;
+    line-height: 0.98;
+  }
+
+  p:not(.eyebrow) {
+    max-width: 44rem;
+    margin: 1rem 0 0;
+    color: var(--color-text-muted);
+    line-height: 1.75;
+  }
 }
 
-.fa-envelope-open-text {
-    color: black;
+.contact__links {
+  display: grid;
+  gap: 0.75rem;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+    min-width: 12rem;
+    padding: 0.85rem 1rem;
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 999px;
+    color: var(--color-text-strong);
+    font-weight: 800;
+    text-decoration: none;
+    transition:
+      border-color 180ms ease,
+      background-color 180ms ease,
+      transform 180ms ease;
+
+    &:hover,
+    &:focus-visible {
+      border-color: rgba(125, 211, 252, 0.46);
+      background: rgba(125, 211, 252, 0.08);
+      transform: translateX(4px);
+    }
+  }
+
+  span {
+    display: grid;
+    width: 2rem;
+    height: 2rem;
+    place-items: center;
+    border-radius: 999px;
+    background: rgba(125, 211, 252, 0.12);
+    color: var(--color-accent);
+    font-size: 0.78rem;
+  }
 }
 
-#c_title {
-    text-align: center;
-
+.contact__meta {
+  margin: 1.3rem 0 0;
+  color: var(--color-text-subtle);
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-#text {
-    text-align: center;
-}
+@media (max-width: 760px) {
+  .contact__panel {
+    grid-template-columns: 1fr;
+  }
 
-#update {
-    text-align: center;
+  .contact__links a {
+    width: 100%;
+  }
 }

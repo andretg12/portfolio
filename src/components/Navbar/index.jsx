@@ -1,57 +1,52 @@
-import React from "react";
+import React, { useState } from "react";
 import "./index.scss";
 
-export default function Navbar() {
-	return (
-		<div>
-			<nav
-				className="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top"
-				id="mainNav"
-			>
-				<div className="container">
-					<a className="navbar-brand" href="#home">
-						Andre Torrealba
-					</a>
-					<button
-						className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarResponsive"
-						aria-controls="navbarResponsive"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						Menu
-						<i className="fas fa-bars"></i>
-					</button>
-					<div className="collapse navbar-collapse" id="navbarResponsive">
-						<ul className="navbar-nav ml-auto">
-							<li className="nav-item mx-0 mx-lg-1">
-								<a className="nav-link py-3 px-0 px-lg-3 rounded" href="#about">
-									About
-								</a>
-							</li>
-							<li className="nav-item mx-0 mx-lg-1">
-								<a
-									className="nav-link py-3 px-0 px-lg-3 rounded"
-									href="#portfolio"
-								>
-									Portfolio
-								</a>
-							</li>
+const navItems = [
+	{ label: "About", href: "#about" },
+	{ label: "Skills", href: "#skills" },
+	{ label: "Work", href: "#portfolio" },
+	{ label: "Contact", href: "#contact" },
+];
 
-							<li className="nav-item mx-0 mx-lg-1">
-								<a
-									className="nav-link py-3 px-0 px-lg-3 rounded"
-									href="#contact"
-								>
-									Contact
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
+export default function Navbar() {
+	const [isOpen, setIsOpen] = useState(false);
+
+	return (
+		<header className="site-header">
+			<nav className="site-nav" aria-label="Primary navigation">
+				<a className="brand" href="#home" onClick={() => setIsOpen(false)}>
+					<span className="brand-mark" aria-hidden="true">
+						AT
+					</span>
+					<span>Andre Torrealba</span>
+				</a>
+
+				<button
+					className="nav-toggle"
+					type="button"
+					aria-expanded={isOpen}
+					aria-controls="primary-navigation"
+					onClick={() => setIsOpen((open) => !open)}
+				>
+					<span className="sr-only">Toggle navigation</span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				</button>
+
+				<ul
+					className={`nav-links${isOpen ? " nav-links--open" : ""}`}
+					id="primary-navigation"
+				>
+					{navItems.map((item) => (
+						<li key={item.href}>
+							<a href={item.href} onClick={() => setIsOpen(false)}>
+								{item.label}
+							</a>
+						</li>
+					))}
+				</ul>
 			</nav>
-		</div>
+		</header>
 	);
 }

@@ -3,39 +3,44 @@ import "./index.scss";
 
 export default function About() {
 	return (
-		<div id="about">
-			<div className="jumbotron">
-				<h1 className="display-4">About Me</h1>
-				<article className="row">
-					<div className="col-sm-12 col-md-6">
-						{/* <img
-						className="abt-img"
-						src="https://images.unsplash.com/photo-1517353334933-3365be5c8ec3?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80"
-						alt="soundboard"
-					/> */}
-						<span role="img" aria-label="Venezuela Flag" className="vzla">
-							🇻🇪
-						</span>
-					</div>
-					<div className="col-sm-12 col-md-6">
-						<p className="lead">
-							Ambitious and passionate developer looking to develop his skills
-							gathered in the Road to Hire program. My passion for tech began
-							very early with the influence of my father, but I did not pursue
-							this passion more deeply until the Road to Hire program where I
-							developed myself profesionally and technically. The technologies I
-							learned are going to be listed below this section.
-						</p>
-						<p className="lead">
-							Another thing I am really passionate about too is music. I've
-							always loved music, coming from a very musical family I always
-							heard how difficult it was to set up music events, and that's what
-							gave me the idea for my eCommerce website which is the project I'm
-							most proud about.
-						</p>
-					</div>
-				</article>
+		<section className="about section section-card reveal" id="about">
+			<div>
+				<p className="eyebrow">About</p>
+				<h2>Engineering leadership with a maker's bias.</h2>
 			</div>
-		</div>
+
+			<div className="about__grid">
+				<div className="about__copy">
+					<p>
+						I connect product goals with maintainable frontend architecture,
+						helping teams ship interfaces that are fast, accessible, and easy to
+						iterate on.
+					</p>
+					<p>
+						My background started with hands-on software development and grew
+						into leading delivery, mentoring engineers, and bringing clarity to
+						ambiguous product spaces.
+					</p>
+				</div>
+
+				<div className="about__highlights" aria-label="Professional highlights">
+					<article>
+						<span>01</span>
+						<strong>Modernize legacy interfaces</strong>
+						<p>Upgrade aging tools while keeping production risk controlled.</p>
+					</article>
+					<article>
+						<span>02</span>
+						<strong>Raise delivery quality</strong>
+						<p>Improve build, review, and release paths so teams move faster.</p>
+					</article>
+					<article>
+						<span>03</span>
+						<strong>Mentor through systems</strong>
+						<p>Use standards, examples, and feedback loops to scale judgment.</p>
+					</article>
+				</div>
+			</div>
+		</section>
 	);
 }
