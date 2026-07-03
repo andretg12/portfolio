@@ -1,31 +1,38 @@
-[{
-        "name": "Guessing Game",
-        "link": "https://guessingame.netlify.com",
-        "img": "img/guess.png"
-    },
-    {
-        "name": "Dice Game",
-        "link": "https://dicegm.netlify.com/",
-        "img": "img/dice.png"
-    },
-    {
-        "name": "React eCommerce Project",
-        "link": "https://project6ix.herokuapp.com",
-        "img": "img/andes.png"
-    },
-    {
-        "name": "TDD Example",
-        "link": "https://github.com/andretg12/tdd",
-        "img": "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
-    },
-    {
-        "name": "Budget App",
-        "link": "https://andre-budget.netlify.com",
-        "img": "https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5da0c622ecafacb6791dd470/screenshot.png"
-    },
-    {
-        "name": "First Website Intended as a Tourism website for Venezuela",
-        "link": "https://venezuela.netlify.com",
-        "img": "https://353a23c500dde3b2ad58-c49fe7e7355d384845270f4a7a0a7aa1.ssl.cf2.rackcdn.com/5d9fa165d26ca54095fac6b2/screenshot.png"
-    }
+[
+  {
+    "name": "React eCommerce Project",
+    "link": "https://project6ix.herokuapp.com",
+    "summary": "A commerce experience shaped around product browsing, cart flow, and checkout-oriented UI patterns.",
+    "tags": ["React", "Commerce", "Product UX"]
+  },
+  {
+    "name": "Budget App",
+    "link": "https://andre-budget.netlify.com",
+    "summary": "A financial planning interface for tracking income and expenses with a simple, focused user flow.",
+    "tags": ["JavaScript", "State", "UX"]
+  },
+  {
+    "name": "TDD Example",
+    "link": "https://github.com/andretg12/tdd",
+    "summary": "A testing-focused code sample showing how implementation can follow clear behavioral expectations.",
+    "tags": ["Testing", "Node", "Quality"]
+  },
+  {
+    "name": "Guessing Game",
+    "link": "https://guessingame.netlify.com",
+    "summary": "An interactive browser game that demonstrates fast feedback, state transitions, and approachable UI.",
+    "tags": ["JavaScript", "Game UI", "Netlify"]
+  },
+  {
+    "name": "Dice Game",
+    "link": "https://dicegm.netlify.com/",
+    "summary": "A compact game interface focused on lightweight interaction and clear visual states.",
+    "tags": ["JavaScript", "Interaction", "UI"]
+  },
+  {
+    "name": "Venezuela Tourism Website",
+    "link": "https://venezuela.netlify.com",
+    "summary": "An early static website concept exploring content structure, visual storytelling, and responsive layout.",
+    "tags": ["HTML", "CSS", "Responsive"]
+  }
 ]

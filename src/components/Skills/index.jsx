@@ -1,72 +1,44 @@
 import React from "react";
 import "./index.scss";
 
+const skillGroups = [
+	{
+		title: "Frontend systems",
+		items: ["React", "Design systems", "Sass", "Accessibility", "Responsive UI"],
+	},
+	{
+		title: "Engineering practice",
+		items: ["Technical direction", "Code review", "Testing", "CI/CD", "Mentorship"],
+	},
+	{
+		title: "Product delivery",
+		items: ["Discovery", "Scoping", "Iteration", "Stakeholder alignment"],
+	},
+];
+
 export default function Skills() {
 	return (
-		<section className="resume-section  p-lg-5 d-flex flex-column" id="skills">
-			<div className="my-auto">
-				<h2 className="mb-5">Programming Languages & Tools</h2>
-				<ul className="list-inline dev-icons">
-					<li className="list-inline-item">
-						<i className="fab fa-apple"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-bootstrap"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-css3-alt"></i>
-					</li>
+		<section className="skills section reveal" id="skills">
+			<div className="section-heading">
+				<p className="eyebrow">Capabilities</p>
+				<h2>Tools are useful. Judgment is the multiplier.</h2>
+				<p>
+					I focus on the practices that keep teams shipping: clear interfaces,
+					healthy feedback loops, and technical decisions that age well.
+				</p>
+			</div>
 
-					<li className="list-inline-item">
-						<i className="fab fa-git-square"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-github"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-gitlab"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-html5"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-js"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-linux"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-microsoft"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-node"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-npm"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-react"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-sass"></i>
-					</li>
-					<li className="list-inline-item">
-						<i className="fab fa-slack"></i>
-					</li>
-					<li className="list-inline-item">
-						<img
-							src="https://img.icons8.com/ios-filled/50/000000/mysql.png"
-							alt="mysql icon"
-						></img>
-					</li>
-				</ul>
-				<article>
-					<p className="lead">
-						All of these languages and tools I have learned how to use them in 6
-						months during my time in the Road to Hire program. If you're looking
-						for someone who can learn fast then look no further.
-					</p>
-				</article>
+			<div className="skills__grid">
+				{skillGroups.map((group) => (
+					<article className="skill-card" key={group.title}>
+						<h3>{group.title}</h3>
+						<ul>
+							{group.items.map((item) => (
+								<li key={item}>{item}</li>
+							))}
+						</ul>
+					</article>
+				))}
 			</div>
 		</section>
 	);
